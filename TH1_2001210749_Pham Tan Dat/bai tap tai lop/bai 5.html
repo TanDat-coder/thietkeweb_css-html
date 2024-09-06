@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Washing Machine Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h3 {
+            color: black;
+        }
+        .container {
+            border: 2px solid #000;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .product-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+        .thumbnail {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .thumbnail img {
+            width: 50px;
+            height: auto;
+            border: 2px solid #ccc;
+            cursor: pointer;
+        }
+        .thumbnail img.selected {
+            border: 2px solid red;
+        }
+        .highlight-features {
+            margin-top: 20px;
+        }
+        .highlight-features h4 {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .highlight-features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .highlight-features li {
+            margin-bottom: 10px;
+            color: black;
+        }
+        .highlight-features li span {
+            color: red;
+        }
+        .highlight-features li span.feature-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img id="main-image" src="images/maygiat.jpg" alt="maygiat">
+            <div class="thumbnail">
+                <img src="images/maygiat1.jpg" alt="máy giặt 1" onclick="changeImage(this)">
+                <img src="images/maygiat2.jpg" alt="máy giặt 2" onclick="changeImage(this)">
+                <img src="images/maygiat3.png" alt="máy giặt 3" onclick="changeImage(this)">
+                <img src="images/maygiat4.jpg" alt="máy giặt 4" onclick="changeImage(this)">
+                <img src="images/maygiat5.jpg" alt="máy giặt 5" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="highlight-features">
+            <h4>Đặc điểm nổi bật</h4>
+            <ul>
+                <li><span class="feature-title">Công nghệ Inverter</span> vận hành êm, bền và tiết kiệm điện</li>
+                <li><span class="feature-title">Công nghệ Ultra Mix</span> giúp giữ quần áo bền màu như mới</li>
+                <li><span class="feature-title">Công nghệ Vapour Care</span> diệt vi khuẩn và tác nhân gây dị ứng</li>
+                <li>Chương trình giặt Vapour Refresh làm mới, giảm nhăn nhúm áo quần</li>
+                <li>Công nghệ AutoSense giặt sấy thông minh, bảo vệ sợi vải</li>
+                <li>Máy giặt có chương trình giặt an toàn cho trang phục len</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(element) {
+            // Thay đổi hình ảnh lớn
+            document.getElementById('main-image').src = element.src;
+            
+            // Xóa viền khung của tất cả các hình ảnh nhỏ
+            var thumbnails = document.querySelectorAll('.thumbnail img');
+            thumbnails.forEach(function(img) {
+                img.classList.remove('selected');
+            });
+            
+            // Thêm viền khung cho hình ảnh được chọn
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

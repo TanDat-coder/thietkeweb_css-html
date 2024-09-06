@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 - Bố cục trang web</title>
+    <style>
+        /* Định dạng chung cho toàn trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Định dạng phần tiêu đề */
+        .header {
+            background-color: #2ecc71;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: black; /* Chuyển màu chữ tiêu đề thành đen */
+        }
+
+        /* Định dạng cho phần nội dung liên kết */
+        .link-section {
+            text-align: left;
+            padding: 5px 10px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .link-section a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Định dạng phần bảng */
+        .content {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content td {
+            padding: 10px;
+            border-bottom: 1px dotted #ccc;
+            line-height: 2em;
+        }
+
+        .dotted-line {
+            border-bottom: 1px dotted black;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        /* Định dạng phần cuối trang */
+        .footer {
+            background-color: #dcdcdc;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Định dạng cho bố cục chính */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tiêu đề -->
+        <div class="header">
+            LẬP TRÌNH WEB KHÓA 09DHTH<br>
+            <span style="font-size: 14px; font-weight: normal;">(Chúc các bạn học tốt)</span>
+        </div>
+
+        <!-- Phần liên kết -->
+        <div class="link-section">
+            <a href="ExternalLink.html">NỘI DUNG</a>
+        </div>
+
+        <!-- Phần nội dung chính (bảng) -->
+        <table class="content">
+            <tr>
+                <td colspan="3">
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Phần chân trang -->
+        <div class="footer">
+            KHOA CNTT
+        </div>
+    </div>
+</body>
+</html>

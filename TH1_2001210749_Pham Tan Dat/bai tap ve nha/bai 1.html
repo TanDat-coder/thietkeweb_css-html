@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách có cấp độ</title>
+    <style>
+        .box {
+            border: 2px solid;
+            padding: 5px;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+        .box.red {
+            border-color: red;
+        }
+        .box.green {
+            border-color: green;
+        }
+        .box.blue {
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Ordered lists can be very simple </h1>
+    <div class="box red">
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
+    
+    <h2>Ordered lists can have a variety of types.</h2>
+    <div class="box green">
+        <ol type="a">
+            <li>Lowercase letters</li>
+            <li type="A">Uppercase letters</li>
+            <li type="i">Lowercase Roman numerals</li>
+            <li type="I">Uppercase Roman numerals</li>
+            <li type="1">Arabic numerals</li>
+        </ol>
+    </div>
+    
+    <h2>Ordered lists can start at different values and with different types.</h2>
+    <div class="box blue">
+        <ol start="10" type="a">
+            <li>This should be j</li>
+            <li type="c">This should be c
+                <ol>
+                    <li>Lists can nest
+                        <ol>
+                            <li>Nesting depth is unlimited</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.ex1 {
+				width: 650px; /* Tăng chiều rộng của khung */
+				height: auto; /* Đặt height tự động để khung có thể điều chỉnh theo nội dung */
+				background-color: rgb(250, 12, 12);
+				padding: 60px;
+				margin: 40px;
+				font-family: arial;
+				box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước của khung */
+			}
+			 
+			.ex2 {
+				width: 100%; /* Đặt chiều rộng 100% để khung con sử dụng toàn bộ chiều rộng của khung cha */
+				height: auto; /* Đặt height tự động */
+				background-color: white;
+				border: 2px solid red; /* Thêm border đỏ thay vì chỉ đặt tên */
+				margin: 2px;
+				padding: 10px;
+				box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước của khung */
+			}
+
+			.inline-images img {
+				display: inline-block; /* Đặt các hình ảnh trong cùng một dòng */
+				margin-right: 10px; /* Tạo khoảng cách giữa các hình ảnh */
+				vertical-align: middle; /* Căn giữa theo chiều dọc */
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="ex1">
+			<h2><font color="white">CÁC CÁCH</font></h2>
+			<h1><font color="white" size="10px">MUA HÀNG ONLINE</font></h1>
+			<div class="ex2"> 
+				<h3><font color="red"><b>Website: nguyenkim.com</b></font></h3>
+				<p><font color="red"><b>Bước 1: &nbsp</b></font>Bạn tìm sản phẩm cần mua tại &nbsp<b>"Danh mục sản phẩm"</b></p>
+				<p>Hoặc nhập vào <b>"Khung tìm kiếm".</b></p>
+				<div class="inline-images">
+					<img src="images/thanhtimkiem.png" width="150">
+					<img src="images/danhmucsanpham.png" width="150">
+				</div>
+				<p><font color="red"><b>Bước 2: &nbsp</b></font>
+                    <br>
+                    <h3>Đối với &nbsp<img src="images/muangay.png" width="100"></p></h3>
+				
+				<ul>
+					<li>Chọn<b>"Mua ngay"</b></li>
+					<li>Chọn số lượng sản phẩm cần mua</li>
+					<li>Nhập mã khuyến mãi (nếu có)</li>
+					<li>Chọn hình thức nhận hàng nhận tại nhà hoặc trung tâm</li>
+					<li>Nhập thông tin của bạn</li>
+					<li>Chọn phương thức thanh toán</li>
+					<li>Chọn thanh toán <img src="images/thanhtoan.png" width="150"></li>
+				</ul>
+				
+				<p>Đối với &nbsp<img src="images/muatragop.png" width="100"></p>
+				
+				<ul>
+					<li>Chọn<b>"Mua trả góp"</b></li>
+					<li>Chọn phương thức trả góp phù hợp</li>
+					<img src="images/quacongtytaichinh.png" width="200">
+					<li>Chọn số tháng trả góp 
+						<img src="images/6thang.png"  width="50">
+						<img src="images/9thang.png"  width="50">
+						<img src="images/12thang.png" width="50">
+						<img src="images/15thang.png" width="50">
+						<img src="images/18thang.png" width="50">
+					</li>
+					<li>Chọn số tiền mua trả trước</li>
+					<li>Chọn công ty tài chính phù hợp. Điền đầy đủ thông tin</li>
+					<li>Chọn <img src="images/thanhtoan.png" width="150"></li>
+				</ul>
+				
+				<ul>
+                    <img src="images/quathetindung.png" width="150"> 
+                    <li>Chọn ngân hàng phát thẻ tín dụng</li>
+                    <li>Điền đầy đủ thông tin nhé</li>
+                    <li>Chọn <img src="images/tieptheo.png" width="150"> </li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
